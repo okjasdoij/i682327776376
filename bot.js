@@ -169,13 +169,13 @@ acc26.login(process.env.ACC26_TOKEN);
 
 const acc27 = new Discord.Client();
 acc27.on('ready', () => {
-    console.log('Account 27 Ready!');
-    setInterval(() => {
-        acc27.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
-    }, 500);
-    setInterval(() => {
-       acc27.channels.find(c => c.id == channel).send('#daily');
-    }, 86403000);
+    console.log('Account 27 Ready!' + acc27.user.tag + ' | ' + acc27.user.id);
+//     setInterval(() => {
+//         acc27.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
+//     }, 500);
+//     setInterval(() => {
+//        acc27.channels.find(c => c.id == channel).send('#daily');
+//     }, 86403000);
 });
 acc27.on('message', message => {
     if(!pepole.includes(message.author.id)) return;
