@@ -42,28 +42,28 @@ acc21.login(process.env.ACC21_TOKEN);
 
 
 
-// const acc2 = new Discord.Client();
-// acc2.on('ready', () => {
-//     console.log('Account 2 Ready!');
-//     setInterval(() => {
-//         acc2.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
-//     }, 500);
-//     setInterval(() => {
-//        acc2.channels.find(c => c.id == channel).send('#daily');
-//     }, 86403000);
-// });
-// acc2.on('message', message => {
-//     if(!pepole.includes(message.author.id)) return;
-//     if(message.content.toLowerCase().split(' ')[0] == prefix.acc2 + 'say') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-//     if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return;
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-// });
-// acc2.login(process.env.ACC2_TOKEN);
+const acc22 = new Discord.Client();
+acc22.on('ready', () => {
+    console.log('Account 22 Ready!');
+    setInterval(() => {
+        acc22.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
+    }, 500);
+    setInterval(() => {
+       acc22.channels.find(c => c.id == channel).send('#daily');
+    }, 86403000);
+});
+acc22.on('message', message => {
+    if(!pepole.includes(message.author.id)) return;
+    if(message.content.toLowerCase().split(' ')[0] == prefix.acc22 + 'say') {
+        if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+    if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
+        if(!message.content.split(' ').slice(1).join(' ')) return;
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+});
+acc22.login(process.env.ACC22_TOKEN);
 
 
 
