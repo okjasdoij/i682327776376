@@ -67,28 +67,28 @@ acc22.login(process.env.ACC22_TOKEN);
 
 
 
-// const acc3 = new Discord.Client();
-// acc3.on('ready', () => {
-//     console.log('Account 3 Ready!');
-//     setInterval(() => {
-//         acc3.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
-//     }, 500);
-//     setInterval(() => {
-//        acc3.channels.find(c => c.id == channel).send('#daily');
-//     }, 86403000);
-// });
-// acc3.on('message', message => {
-//     if(!pepole.includes(message.author.id)) return;
-//     if(message.content.toLowerCase().split(' ')[0] == prefix.acc3 + 'say') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-//     if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return;
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-// });
-// acc3.login(process.env.ACC3_TOKEN);
+const acc23 = new Discord.Client();
+acc23.on('ready', () => {
+    console.log('Account 23 Ready!');
+    setInterval(() => {
+        acc23.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
+    }, 500);
+    setInterval(() => {
+       acc23.channels.find(c => c.id == channel).send('#daily');
+    }, 86403000);
+});
+acc23.on('message', message => {
+    if(!pepole.includes(message.author.id)) return;
+    if(message.content.toLowerCase().split(' ')[0] == prefix.acc23 + 'say') {
+        if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+    if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
+        if(!message.content.split(' ').slice(1).join(' ')) return;
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+});
+acc23.login(process.env.ACC23_TOKEN);
 
 
 
