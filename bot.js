@@ -244,7 +244,7 @@ acc29.login(process.env.ACC29_TOKEN);
 
 const acc30 = new Discord.Client();
 acc30.on('ready', () => {
-    console.log('Account 30 Ready! ' + acc30.user.id);
+    console.log('Account 30 Ready!');
     setInterval(() => {
         acc30.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
     }, 500);
