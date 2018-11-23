@@ -192,28 +192,28 @@ acc27.login(process.env.ACC27_TOKEN);
 
 
 
-// const acc8 = new Discord.Client();
-// acc8.on('ready', () => {
-//     console.log('Account 8 Ready!');
-//     setInterval(() => {
-//         acc8.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
-//     }, 500);
-//     setInterval(() => {
-//        acc8.channels.find(c => c.id == channel).send('#daily');
-//     }, 86403000);
-// });
-// acc8.on('message', message => {
-//     if(!pepole.includes(message.author.id)) return;
-//     if(message.content.toLowerCase().split(' ')[0] == prefix.acc8 + 'say') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-//     if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return;
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-// });
-// acc8.login(process.env.ACC8_TOKEN);
+const acc28 = new Discord.Client();
+acc28.on('ready', () => {
+    console.log('Account 28 Ready!');
+    setInterval(() => {
+        acc28.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
+    }, 500);
+    setInterval(() => {
+       acc28.channels.find(c => c.id == channel).send('#daily');
+    }, 86403000);
+});
+acc28.on('message', message => {
+    if(!pepole.includes(message.author.id)) return;
+    if(message.content.toLowerCase().split(' ')[0] == prefix.acc28 + 'say') {
+        if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+    if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
+        if(!message.content.split(' ').slice(1).join(' ')) return;
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+});
+acc28.login(process.env.ACC28_TOKEN);
 
 
 
