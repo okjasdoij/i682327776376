@@ -92,28 +92,28 @@ acc23.login(process.env.ACC23_TOKEN);
 
 
 
-// const acc4 = new Discord.Client();
-// acc4.on('ready', () => {
-//     console.log('Account 4 Ready!');
-//     setInterval(() => {
-//         acc4.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
-//     }, 500);
-//     setInterval(() => {
-//        acc4.channels.find(c => c.id == channel).send('#daily');
-//     }, 86403000);
-// });
-// acc4.on('message', message => {
-//     if(!pepole.includes(message.author.id)) return;
-//     if(message.content.toLowerCase().split(' ')[0] == prefix.acc4 + 'say') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-//     if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return;
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-// });
-// acc4.login(process.env.ACC4_TOKEN);
+const acc24 = new Discord.Client();
+acc24.on('ready', () => {
+    console.log('Account 24 Ready!');
+    setInterval(() => {
+        acc24.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
+    }, 500);
+    setInterval(() => {
+       acc24.channels.find(c => c.id == channel).send('#daily');
+    }, 86403000);
+});
+acc24.on('message', message => {
+    if(!pepole.includes(message.author.id)) return;
+    if(message.content.toLowerCase().split(' ')[0] == prefix.acc24 + 'say') {
+        if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+    if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
+        if(!message.content.split(' ').slice(1).join(' ')) return;
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+});
+acc24.login(process.env.ACC24_TOKEN);
 
 
 
