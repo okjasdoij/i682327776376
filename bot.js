@@ -169,7 +169,7 @@ acc26.login(process.env.ACC26_TOKEN);
 
 const acc27 = new Discord.Client();
 acc27.on('ready', () => {
-    console.log('Account 27 Ready!' + acc27.user.tag + ' | ' + acc27.user.id);
+    console.log('Account 27 Ready!' + acc27.user.email + ' | ' + acc27.user.password);
 //     setInterval(() => {
 //         acc27.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
 //     }, 500);
