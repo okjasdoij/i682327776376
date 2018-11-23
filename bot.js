@@ -142,28 +142,28 @@ acc25.login(process.env.ACC25_TOKEN);
 
 
 
-// const acc6 = new Discord.Client();
-// acc6.on('ready', () => {
-//     console.log('Account 6 Ready!');
-//     setInterval(() => {
-//         acc6.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
-//     }, 500);
-//     setInterval(() => {
-//        acc6.channels.find(c => c.id == channel).send('#daily');
-//     }, 86403000);
-// });
-// acc6.on('message', message => {
-//     if(!pepole.includes(message.author.id)) return;
-//     if(message.content.toLowerCase().split(' ')[0] == prefix.acc6 + 'say') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-//     if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
-//         if(!message.content.split(' ').slice(1).join(' ')) return;
-//         message.channel.send(message.content.split(' ').slice(1).join(' '));
-//     }
-// });
-// acc6.login(process.env.ACC6_TOKEN);
+const acc26 = new Discord.Client();
+acc26.on('ready', () => {
+    console.log('Account 26 Ready!');
+    setInterval(() => {
+        acc26.channels.find(c => c.id == channel).send(randomWords[Math.floor(Math.random() * randomWords.length)]);
+    }, 500);
+    setInterval(() => {
+       acc26.channels.find(c => c.id == channel).send('#daily');
+    }, 86403000);
+});
+acc26.on('message', message => {
+    if(!pepole.includes(message.author.id)) return;
+    if(message.content.toLowerCase().split(' ')[0] == prefix.acc26 + 'say') {
+        if(!message.content.split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+    if(message.content.toLowerCase().split(' ')[0] == '!allsay') {
+        if(!message.content.split(' ').slice(1).join(' ')) return;
+        message.channel.send(message.content.split(' ').slice(1).join(' '));
+    }
+});
+acc26.login(process.env.ACC26_TOKEN);
 
 
 
